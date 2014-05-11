@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
     <%= f.label :first_unity %><br>
     <%= f.text_field :first_unity %>
   </div>
@@ -22,10 +27,6 @@
   <div class="field">
     <%= f.label :third_unity %><br>
     <%= f.text_field :third_unity %>
-  </div>
-  <div class="field">
-    <%= f.label :status %><br>
-    <%= f.text_field :status %>
   </div>
   <div class="actions">
     <%= f.submit %>

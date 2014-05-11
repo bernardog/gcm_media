@@ -3,10 +3,11 @@
 <table>
   <thead>
     <tr>
-      <th>First unity</th>
-      <th>Second unity</th>
-      <th>Third unity</th>
-      <th>Status</th>
+      <th>Nome</th>
+      <th>Primeira Unidade</th>
+      <th>Segunda Unidade</th>
+      <th>Terceira Unidade</th>
+      <th>Situação</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,6 +15,7 @@
   <tbody>
     <% @courses.each do |course| %>
       <tr>
+        <td><%= course.name %></td>
         <td><%= course.first_unity %></td>
         <td><%= course.second_unity %></td>
         <td><%= course.third_unity %></td>
