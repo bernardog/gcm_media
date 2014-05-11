@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First unity:</strong>
+  <%= @course.first_unity %>
+</p>
+
+<p>
+  <strong>Second unity:</strong>
+  <%= @course.second_unity %>
+</p>
+
+<p>
+  <strong>Third unity:</strong>
+  <%= @course.third_unity %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @course.status %>
+</p>
+
+<%= link_to 'Edit', edit_course_path(@course) %> |
+<%= link_to 'Back', courses_path %>

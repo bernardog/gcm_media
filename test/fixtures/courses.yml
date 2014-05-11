@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_unity: 
+  second_unity: 
+  third_unity: 
+  status: MyString
+
+two:
+  first_unity: 
+  second_unity: 
+  third_unity: 
+  status: MyString
