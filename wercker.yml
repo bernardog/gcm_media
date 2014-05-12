@@ -32,7 +32,7 @@ build:
           name: setup database
           code: rake db:migrate RAILS_ENV=test
 
-        -script:
+        - script:
           name: execute tests
           code: rake
 
