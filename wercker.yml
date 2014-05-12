@@ -34,4 +34,4 @@ build:
 
         - script:
             name: test
-            code: rake
+            code: bundle exec rake
