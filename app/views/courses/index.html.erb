@@ -1,4 +1,4 @@
-<h1>Listing courses</h1>
+<h1>Minhas Disciplinas</h1>
 
 <table>
   <thead>
@@ -20,9 +20,9 @@
         <td><%= course.second_unity %></td>
         <td><%= course.third_unity %></td>
         <td><%= course.status %></td>
-        <td><%= link_to 'Show', course %></td>
-        <td><%= link_to 'Edit', edit_course_path(course) %></td>
-        <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Visualizar', course %></td>
+        <td><%= link_to 'Editar', edit_course_path(course) %></td>
+        <td><%= link_to 'Excluir', course, method: :delete, data: { confirm: 'Tem certeza disto?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Course', new_course_path %>
+<%= link_to 'Nova Disciplina', new_course_path %>
