@@ -5,7 +5,7 @@ class CreateCourses < ActiveRecord::Migration
       t.float :first_unity
       t.float :second_unity
       t.float :third_unity
-      t.string :status
+      t.integer :status
 
       t.timestamps
     end
