@@ -11,13 +11,13 @@ class CourseTest < ActiveSupport::TestCase
     assert_equal @course.status, 'aprovado'
   end
 
-  test 'status should be retake if 3 <= average < 5' do
+  test "status should be 'em recuperação' if 3 <= average < 5" do
     @course = courses(:retake)
     @course.save
     assert_equal @course.status, 'em recuperação'
   end
 
-  test 'status should be retake if average < 3' do
+  test "status should be 'reprovado' if average < 3" do
     @course = courses(:failed)
     @course.save
     assert_equal @course.status, 'reprovado'
