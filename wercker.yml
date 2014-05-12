@@ -22,19 +22,20 @@ build:
         # A custom script step, name value is used in the UI
         # and the code value contains the command that get executed
         - script:
-            name: echo ruby information
-            code: |
-                echo "ruby version $(ruby --version) running"
-                echo "from location $(which ruby)"
-                echo -p "gem list: $(gem list)"
+          name: echo ruby information
+          code: |
+              echo "ruby version $(ruby --version) running"
+              echo "from location $(which ruby)"
+              echo -p "gem list: $(gem list)"
+
         - script:
-            name: setup database
-            code: rake db:migrate RAILS_ENV=test
+          name: setup database
+          code: rake db:migrate RAILS_ENV=test
 
         -script:
           name: execute tests
           code: rake
-          
+
         # Add more steps here:
         # - script:
         #        name: rspec
