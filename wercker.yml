@@ -29,14 +29,9 @@ build:
                 echo -p "gem list: $(gem list)"
 
         - script:
-            name: setup database
-            code: rake db:migrate RAILS_ENV=test
+            name: Set up database
+            code: bundle exec rake db:migrate RAILS_ENV=test
 
         - script:
-            name: execute tests
+            name: test
             code: rake
-
-        # Add more steps here:
-        # - script:
-        #        name: rspec
-        #        code: bundle exec rspec
