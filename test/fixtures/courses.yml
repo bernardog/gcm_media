@@ -9,3 +9,18 @@ two:
   first_unity: '3.0'
   second_unity: '3.0'
   third_unity: '3.0'
+
+approved:
+  first_unity: '5.0'
+  second_unity: '5.0'
+  third_unity: '5.0'
+
+failed:
+  first_unity: '2.9'
+  second_unity: '2.9'
+  third_unity: '2.9'
+
+retake:
+  first_unity: '4.9'
+  second_unity: '4.9'
+  third_unity: '4.9'
