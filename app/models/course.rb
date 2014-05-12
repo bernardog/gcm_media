@@ -10,7 +10,7 @@ class Course < ActiveRecord::Base
   def update_status
     if get_avarage < 3.0
       self.status = 'reprovado'
-    elsif get_avarage < 5.0
+    elsif get_avarage <= 5.0
       self.status = 'em recuperação'
     else
       self.status = 'aprovado'
