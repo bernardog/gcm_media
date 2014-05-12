@@ -21,3 +21,11 @@
 
 en:
   hello: "Hello world"
+  back: "Voltar"
+  activerecord:
+    attributes:
+      course:
+        first_unit: "Primeira Unidade"
+        second_unit: "Segunda Unidade"
+        status:
+          1: "recuperação"

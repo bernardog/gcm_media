@@ -14,10 +14,11 @@
 ActiveRecord::Schema.define(version: 20140511214224) do
 
   create_table "courses", force: true do |t|
+    t.string   "name"
     t.float    "first_unity"
     t.float    "second_unity"
     t.float    "third_unity"
-    t.string   "status"
+    t.integer  "status"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
